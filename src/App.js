@@ -1,11 +1,20 @@
+import React, { Component } from 'react'
 import './App.css';
+import Login from './components/Login/login'
+class App extends Component {
 
-function App() {
-  return (
-    <div className="App">
-      Hello
-    </div>
-  );
+  state = {
+    type: '',
+    name: '',
+    value: ''
+  }
+  render() {
+    return (
+      <div>
+        <Login/>
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
