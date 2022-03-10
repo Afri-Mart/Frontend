@@ -10,12 +10,9 @@ input, button {
     appearance: none;
     outline: none;
     background: none;
-    border: none;
-    width: 100%;
 }
 
 form {
-    background-color: red;
     display: block;
     margin: 100px;
     padding: 10px 20px;
