@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-import Input from './input'
-
-function Login
-() {
-  return (
-    <div>
-        <Input />
-=======
 import React, { useState } from 'react'
 import LoginForm from './loginForm'
 
@@ -48,13 +38,8 @@ function Login() {
             :
             <LoginForm logIn ={logIn} logOut = {logOut} error={error}/>
         }
->>>>>>> log-in
     </div>
   )
 }
 
-<<<<<<< HEAD
 export default Login
-=======
-export default Login
->>>>>>> log-in

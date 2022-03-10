@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import CreateAccount from './CreateAccount'
 import './loginForm.css'
 
 function LoginForm({ logIn, logOut, error }) {
