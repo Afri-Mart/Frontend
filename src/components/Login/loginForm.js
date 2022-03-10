@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import CreateAccount from './CreateAccount'
-import './login.css'
+import './loginForm.css'
 
 function LoginForm({ logIn, logOut, error }) {
     const [userDetails, setUserDetails ] = useState({email: '', password: ''})
@@ -41,18 +41,19 @@ const handleSubmit = (event) => {
                     />
                 </div>
                 {(error !== '') ? (<p>{error}</p>) : ''}
+
+                <div>
+                    <button className='=submit-btn'>SUBMIT</button>
+                </div>
+
+            </div>
+            <div className='extra-details'>
+                <p>Don't have an account?</p> <p><a href = '/'>Create a new Account!</a></p>
+                <p><a href = '/'>Forgot password?</a></p>
             </div>
 
-            <div>
-                <button className='=submit-btn'>SUBMIT</button>
-            </div>
         </form>
         
-
-        <div className='extra-details'>
-            <p>Don't have an account?</p> <p><a href = '/'>Create a new Account!</a></p>
-            <p><a href = '/'>Forgot password?</a></p>
-        </div>
     </div>
   )
 }

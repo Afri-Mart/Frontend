@@ -1,20 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './App.css';
-import Login from './components/Login/login'
-class App extends Component {
+import LoginForm from './components/Login/login'
+function App () {
 
-  state = {
-    type: '',
-    name: '',
-    value: ''
-  }
-  render() {
     return (
       <div>
-        <Login/>
+        <LoginForm/>
       </div>
     )
-  }
+    
 }
 
 export default App
