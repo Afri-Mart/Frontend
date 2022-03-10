@@ -2,51 +2,50 @@ import React, { useState } from 'react'
 import './login.css'
 
 function Input() {
-    const [ enteredInput, setInput ] = useState('')
+    const [userDetails, setUserDetails ] = useState({email: '', password: ''})
 
-
-const handleChange = (event) => {
-    setInput(event.target.value)
-    console.log(event.target.value)
-}
 
 const handleSubmit = (event) => {
     event.preventDefault();
-    if(enteredInput !== ''){
-        alert(`WELCOME ${enteredInput}`)
+    if(userDetails.email !== ''|| userDetails.password != ''){
+        alert(`WELCOME ${userDetails.email}`)
     }
 }
 
   return (
     <form onSubmit = {handleSubmit}>
-        <div className='container'>
-            <label for='name'>Email: </label>
-            <input 
-                type = 'text'
-                id = 'name'
-                value = {enteredInput} 
-                onChange = {handleChange}
-            />
-        </div>
+        
+        <div className='form-group'> 
 
-        <div className='container'>
-            <label for='password'>Password: </label>
-            <input 
-                type = 'password'
-                id = 'password'
-                value = {enteredInput} 
-                onChange = {handleChange}
-            />
+            <div className='form-inner'>
+                <label for='name'>Email: </label>
+                <input 
+                    type = 'email'
+                    id = 'name'
+                    value = {userDetails.email} 
+                    onChange = {e => setUserDetails({...userDetails, email: e.target.value})}
+                />
+            </div>
+
+            <div className='form-inner'>
+                <label for='password'>Password: </label>
+                <input 
+                    type = 'password'
+                    id = 'password'
+                    value = {userDetails.password} 
+                    onChange = {e => setUserDetails({...userDetails, password: e.target.value})}
+                />
+            </div>
         </div>
 
         <div>
-            <button>SUBMIT</button>
+            <button className='=submit-btn'>SUBMIT</button>
         </div>
-        <div>
+
+        <div className='extra-details'>
             <p>Don't have an account? </p>
             <p><a href = '/'>forgot password?</a></p>
         </div>
-        
         
     </form>
   )
