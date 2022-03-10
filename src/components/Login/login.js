@@ -1,13 +1,43 @@
-import React from 'react'
-import Input from './input'
+import React, { useState } from 'react'
+import LoginForm from './loginForm'
 
-function Login({ type, id, onChange, value }) {
+function Login() {
+
+    const [user, setUser] = useState({email: '', password: ''});
+    const [error,  setError] = useState('');
+
+    const testUser ={
+        email: "admin@gmail.com",
+        password: "kosiso"
+    }
+
+    const logIn = user => {
+        if(user.email === testUser.email && user.password === testUser.password){
+            setUser({
+                email: user.email,
+                password: user.password
+            })
+            //console.log(user)
+        }else
+            //console.log('deets dont match')
+            setError('Details do not match')  
+    }
+
+    const logOut = () => {
+        setUser({email: '', password: ''})
+        setError('')
+    }
+
   return (
     <div>
-        <Input />
-        {/* <Input />
-        <Input />
-        <button>LOGIN</button> */}
+        {(user.email !== '') ? 
+            <div>
+                <h2>WELCOME {user.email}</h2>
+                <button onClick = {logOut}>LOGOUT</button>
+            </div>
+            :
+            <LoginForm logIn ={logIn} logOut = {logOut} error={error}/>
+        }
     </div>
   )
 }
