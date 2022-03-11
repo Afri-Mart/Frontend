@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {Link} from 'react-router-dom';
 
 function CreateAccount() {
 
@@ -70,6 +71,7 @@ function CreateAccount() {
             <div>
                 <button className='=submit-btn'>CREATE ACCOUNT</button>
             </div>
+            <p>Already have an account?<Link to= '' className="nav-link">LogIn</Link></p>
         </form>
     </div>
   )

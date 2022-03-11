@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './loginForm.css'
+import {Link} from 'react-router-dom'
 
 function LoginForm({ logIn, logOut, error }) {
     const [userDetails, setUserDetails ] = useState({email: '', password: ''})
@@ -14,7 +15,7 @@ const handleSubmit = (event) => {
 }
 
   return (
-    <div>
+    <div className='form'>
         <form onSubmit = {handleSubmit}>
             
             <div className='form-group'> 
@@ -47,7 +48,7 @@ const handleSubmit = (event) => {
 
             </div>
             <div className='extra-details'>
-                <p>Don't have an account?</p> <p><a href = '/'>Create a new Account!</a></p>
+                <p>Don't have an account? <Link to= '' className="nav-link">Create New Account</Link></p>
                 <p><a href = '/'>Forgot password?</a></p>
             </div>
 
