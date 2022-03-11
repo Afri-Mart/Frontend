@@ -1,5 +1,4 @@
 import React from 'react'
-import './App.css';
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 //import { Link } from 'react-router-dom';
 import LoginForm from './components/Login/login'

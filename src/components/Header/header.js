@@ -1,6 +1,6 @@
 import React from 'react'
 import SearchBar from './searchBar'
-import logo from '../../Assets/Logo.jpg'
+import logo from '../../Assets/logo.png'
 import ShoppingCart from '@material-ui/icons/ShoppingCart'
 import AccountCircle from '@material-ui/icons/AccountCircle'
 import './header.css'
