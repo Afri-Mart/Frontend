@@ -11,19 +11,19 @@ function NavBar() {
         </div>
         <nav className='nav-bar-group'>
                 <li className="nav-item">
-                <Link to= '' className="nav-link">FOOD</Link>
+                <Link to= '/food' className="nav-link">FOOD</Link>
                 </li>
                 <li className="nav-item">
-                <Link to= '' className="nav-link">CLOTHES</Link>
+                <Link to= '/clothes' className="nav-link">CLOTHES</Link>
                 </li>
                 <li className="nav-item">
-                <Link to= '' className="nav-link">GROCERIES</Link>
+                <Link to= '/groceries' className="nav-link">GROCERIES</Link>
                 </li>
                 <li className="nav-item">
-                <Link to= '' className="nav-link">KITCHEN APPLIANCES</Link>
+                <Link to= '/kitchen-appliances' className="nav-link">KITCHEN APPLIANCES</Link>
                 </li>
                 <li className="nav-item">
-                <Link to= '' className="nav-link">HOUSEHOLD</Link>
+                <Link to= '/household' className="nav-link">HOUSEHOLD</Link>
                 </li>
         </nav>
     </div>
