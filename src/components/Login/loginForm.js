@@ -15,41 +15,43 @@ const handleSubmit = (event) => {
 }
 
   return (
-    <div className='form'>
+    <div className='form-container'>
         <form onSubmit = {handleSubmit}>
             
             <div className='form-group'> 
-                <h3>LOG IN</h3>
+                <h3>LOGIN</h3>
 
                 <div className='form-inner'>
-                    <label htmlFor='name'>Email: </label>
-                    <input 
+                    <label htmlFor='name'></label>
+                    <input className='login-input'
                         type = 'email'
                         id = 'name'
+                        placeholder='Email'
                         value = {userDetails.email} 
                         onChange = {e => setUserDetails({...userDetails, email: e.target.value})}
                     />
                 </div>
 
                 <div className='form-inner'>
-                    <label htmlFor='password'>Password: </label>
-                    <input 
+                    <label htmlFor='password'></label>
+                    <input className='login-input'
                         type = 'password'
                         id = 'password'
+                        placeholder='Password'
                         value = {userDetails.password} 
                         onChange = {e => setUserDetails({...userDetails, password: e.target.value})}
                     />
                 </div>
+
+                <button className='login-input'>Continue</button>
                 {(error !== '') ? (<p>{error}</p>) : ''}
 
-                <div>
-                    <button className='=submit-btn'>SUBMIT</button>
+            
+                <div className='extra-details'>
+                    <p>Don't have an account?</p> <Link to= '' className="nav-link">Create New Account</Link>
                 </div>
-
-            </div>
-            <div className='extra-details'>
-                <p>Don't have an account? <Link to= '' className="nav-link">Create New Account</Link></p>
                 <p><a href = '/'>Forgot password?</a></p>
+                
             </div>
 
         </form>

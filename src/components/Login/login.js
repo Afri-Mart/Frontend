@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import LoginForm from './loginForm'
+import './loginForm.css'
 
 function Login() {
 
@@ -29,9 +30,9 @@ function Login() {
     }
 
   return (
-    <div>
+    <div className='welcome-container'>
         {(user.email !== '') ? 
-            <div>
+            <div className=''>
                 <h2>WELCOME {user.email}</h2>
                 <button onClick = {logOut}>LOGOUT</button>
             </div>

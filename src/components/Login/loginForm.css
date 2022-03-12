@@ -1,83 +1,66 @@
-/*{
-    
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: montserrat, sans-serif;
 }
 
-/* Rectangle 3 */
-
-/*.form {
-    position: absolute;
-    width: 969px;
-    height: 594px;
-    left: 271px;
-    top: 231px;
-
-    background: rgba(255, 122, 0, 0.1);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-*/
-/*
-h3{
-    
-    position: absolute;
-    width: 189px;
-    height: 54px;
-    left: 669px;
-    top: 292px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 56px;
-
-    color: #000000;
-}
-.form-inner {
-
-    position: absolute;
-    width: 484px;
-    height: 50px;
-    left: 513px;
-    top: 411px;
-
-    background: #FFFFFF;
-    border-radius: 30px;
-
-   
-}
-.submit-btn {
-
-    position: absolute;
-    width: 484px;
-    height: 50px;
-    left: 513px;
-    top: 650px;
-
-    background: #FF7A00;
-    border-radius: 30px;
-} 
-
-
-input, button {
-    appearance: none;
-    outline: none;
-    background: none;
-}
-
-form {
-    display: block;
-    margin: 100px;
-    padding: 10px 20px;
-    height: 50vh;
-    align-items: center;
-    justify-content: center;
+.form-container{
+    background-color: #FFE6CE;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px 80px;
     border-radius: 20px;
 }
 
-.form-group {
-    background-color: white;
-    align-items: center;
-    justify-content: center;
-}*/
+.form-group{
+    width: 100%;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.form-group h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form-inner{
+    width: 100%;
+    margin: 10px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+
+.login-input{
+    width: 100%;
+    padding: 10px;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+button.login-input{
+    background-color: #FF7A00;
+    border-radius: 30px;
+    margin: 10px;
+    font-size: 16px;
+    color:#FFFFFF
+}
+
+button.login-input:hover {
+    cursor: pointer;
+    background-color: #f79b46;
+    
+}
+
+.extra-details{
+    display: flex;
+    justify-content: space-around;
+    margin: 2px;
+}

@@ -11,6 +11,7 @@ function SearchBar() {
         <SearchIcon className='search-icon'/>
         <label className='input-field' htmlFor='search'>
         <input
+            className='search-input'
             type='search'
             name='search'
             value={query}

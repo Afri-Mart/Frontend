@@ -8,13 +8,10 @@ function App () {
 
     return (
       <BrowserRouter>
-        <div>
-          
           {/*<SearchIcon />*/}
           <Header />
           <NavBar/>
-          {/* <LoginForm/> */}
-        </div>
+          <LoginForm/>
       </BrowserRouter>
     )
     
