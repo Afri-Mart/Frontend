@@ -11,7 +11,7 @@ function App () {
           {/*<SearchIcon />*/}
           <Header />
           <NavBar/>
-          <LoginForm/>
+          {/* <LoginForm/> */}
       </BrowserRouter>
     )
     
