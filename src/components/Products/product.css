@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.item-list{
+    width: 600px; 
+    /* background-color: red; */
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.ind-item > img {
+    width:  200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.ind-item:hover{
+    border: 1px grey solid;
+    background-color: #F8F5F5;
+}
