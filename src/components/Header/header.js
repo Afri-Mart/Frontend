@@ -11,8 +11,9 @@ function Header() {
     <header className='header-container'>
         <img src = {logo} alt = ''/>
         <SearchBar />
-        <AccountCircle />
+        <AccountCircle className='icon'/>
         <ShoppingCart />
+        
     </header>
   )
 }

@@ -9,11 +9,20 @@
     margin-top: 10px;
     height: 40px;
     display: flex;
-    justify-content:space-around;
+    justify-content: center;
+}
+
+.header-container > img {
+    margin-right: auto;
+    margin-left: 20px;
+}
+.icon{
+    margin-left: auto;
+    margin-right: 40px;
 }
 .search-container{
     background-color: #F8F5F5;
-    width: 50%;
+    width: 60%;
     height: 80%;
     border-top: 10px;
     border-radius: 30px;
@@ -44,22 +53,28 @@
     background-color: #FF7A00;
     height: 40px;
     display: flex;
-    justify-content:space-around;
+    justify-content:center;
     align-items: center;
+}
+.list-icon{
+    margin-right: auto;
+    margin-left: 30px;
 }
 
 .nav-bar-group{
-    display:inline-flex;
-    justify-content: flex-end;
+    display: flex;
     font-size: small;
+    justify-content: center;
+    margin-right: auto;
 }
 
-.nav-item {
-    border-style: solid;
+.nav-link {
     border-radius: 20px;
-    margin: 5px;
-    padding: 2px;
+    margin: 8px;
+    padding: 5px;
     list-style: none;
     text-decoration: none;
     background-color: #F8F5F5;
+    color: #000;
+    font-weight: 600;
 }
