@@ -9,7 +9,7 @@ function SearchBar() {
   return (
     <div className='search-container'>
         <SearchIcon className='search-icon'/>
-        <label className='input-field' htmlFor='search'>
+        <label htmlFor='search'>
         <input
             className='search-input'
             type='search'
