@@ -1,5 +1,4 @@
 .header-container{
-    /* background-color: aqua; */
     margin-top: 10px;
     height: 50px;
     display: flex;
@@ -39,7 +38,7 @@
     appearance: none;
     position: absolute;
     top: 10%;
-    right: 5px;
+    right: -7px;
 }
 
 .nav-container {
