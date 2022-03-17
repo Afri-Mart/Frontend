@@ -22,5 +22,6 @@
 
 .ind-item:hover{
     border: 1px grey solid;
-    background-color: #F8F5F5;
+    background-color: #f7f2ef;
+    cursor: pointer;
 }
