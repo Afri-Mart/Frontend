@@ -1,4 +1,4 @@
-import axios from 'axios';
+//import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import Product from './product'
 import './product.css'
@@ -37,6 +37,7 @@ function Products() {
   return (
     <div className='item-list'>
        {fetchedData}
+       {error}
     </div>
   )
 }
