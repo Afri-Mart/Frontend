@@ -1,0 +1,30 @@
+.wrapper{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper > h4 {
+  margin-left: 220px;
+}
+
+.loader{
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #FF7A00;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    margin-left: 230px;
+    animation: spin 1s linear infinite; 
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}  
+
