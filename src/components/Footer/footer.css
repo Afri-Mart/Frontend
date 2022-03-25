@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    background-color: #FF7A00;
+    color: #fff;
+}
+.cols-group{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col{
+    border: black solid;
+    flex-wrap: nowrap;
+    margin: 20px;
+    padding: 5px;
+}
+.col > ul{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+}
+
+.col-title{
+    padding: 10px 0;
+}
+
+.col > li{
+    
+}
+
+.end-footer{
+    background-color: #fff;
+    text-align: center;
+}

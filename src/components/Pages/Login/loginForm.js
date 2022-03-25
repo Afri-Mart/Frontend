@@ -29,6 +29,7 @@ const handleSubmit = (event) => {
                         placeholder='Email'
                         value = {userDetails.email} 
                         onChange = {e => setUserDetails({...userDetails, email: e.target.value})}
+                        required
                     />
                 </div>
 
@@ -40,6 +41,7 @@ const handleSubmit = (event) => {
                         placeholder='Password'
                         value = {userDetails.password} 
                         onChange = {e => setUserDetails({...userDetails, password: e.target.value})}
+                        required
                     />
                 </div>
 

@@ -70,3 +70,8 @@
     color: #000;
     font-weight: 600;
 }
+
+.login-btn{
+    margin-bottom: 5px;
+    cursor: pointer;
+}
