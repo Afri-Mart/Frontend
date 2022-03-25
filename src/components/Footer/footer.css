@@ -24,18 +24,16 @@ footer{
 }
 
 .col{
-    /* border: black solid; */
-    flex-wrap: nowrap;
     margin: 20px;
     padding: 5px;
 }
+
 .col > ul{
     display: flex;
     flex-direction: column;
-    justify-content:center;
     align-items: flex-start;
     list-style: none;
-    /* text-decoration: none; */
+    font-size: 14px;
 }
 
 .col-title{
@@ -43,13 +41,9 @@ footer{
     padding-top: 5px;
     padding-bottom: 20px;
 }
-span {
-    padding-bottom: 10px;
-    border-bottom: 1px solid #0099d3;
-    line-height: 48px;
-  }
 
 .end-footer{
+    padding: 10px 0;
     background-color: #fff;
     text-align: center;
 }
