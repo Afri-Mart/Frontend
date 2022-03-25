@@ -10,7 +10,8 @@ function Footer() {
 
             {/* 1st column */}
             <div className='col'>
-                <h3 className='col-title'>INFORMATION</h3>
+                <h4 className='col-title'>INFORMATION</h4>
+                <span></span>
                 <ul>
                     <li><a href='/'>FAQ</a></li>
                     <li><a href='/'>About us</a></li>
@@ -22,7 +23,7 @@ function Footer() {
 
             {/* 2nd column */}
             <div className='col'>
-                <h3 className='col-title'>GET TO KNOW ABOUT US</h3>
+                <h4 className='col-title'>GET TO KNOW US</h4>
                 <ul>
                     <li><a href='/'>Careers</a></li>
                     <li><a href='/'>Blog</a></li>
@@ -34,7 +35,7 @@ function Footer() {
 
             {/* 3rd column */}
             <div className='col'>
-                <h3 className='col-title'>SERVICES</h3>
+                <h4 className='col-title'>SERVICES</h4>
                 <ul>
                     <li><a href='/'>Afrimart Payment Products</a></li> 
                     <li><a href='/'>Afrimart Rewards Visa Signature Cards</a></li>
