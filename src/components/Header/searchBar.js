@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import SearchIcon from '@material-ui/icons/Search'
 import './header.css'
 
 function SearchBar() {
@@ -8,7 +7,7 @@ function SearchBar() {
 
   return (
     <div className='search-container'>
-        <SearchIcon className='search-icon'/>
+        <i className="material-icons search-icon">search</i>
         <label htmlFor='search'>
         <input
             className='search-input'

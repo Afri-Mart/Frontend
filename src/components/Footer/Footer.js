@@ -50,7 +50,7 @@ function Footer() {
         <div className='end-footer'>
             <img src={logo} alt='Afri-mart Logo'></img>
         </div>
-
+            
     </footer>
   )
 }

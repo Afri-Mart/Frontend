@@ -1,11 +1,9 @@
 //import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import Product from './product'
 import Spinner from '../Reusables/spinner'
 import './product.css'
 
 function Products() {
-
     const [items, setItems] = useState([]);
     const [error, setError] = useState('')
     const [isLoading, setIsLoading] = useState(false)
@@ -32,14 +30,16 @@ function Products() {
     }, [])
 
     const fetchedData = items.map(each => 
-            <Product 
-                key={each.id} 
-                title={each.Title} 
-                price={each.Price}
-                image={each.image}
-            />)
+        <div className='ind-item' key={each.id}>
+            <img src = {each.image} alt = 'plated food'/>
+            <h5> {each.Title} </h5>
+            <p>{each.Price}</p>
+        </div>   
+    )
+
     const result = isLoading ? <Spinner /> : fetchedData
-  return (
+  
+    return (
     <div className='item-list'>
         {result}
     </div>

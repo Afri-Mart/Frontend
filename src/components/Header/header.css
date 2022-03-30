@@ -1,3 +1,8 @@
+.icon{
+    font-size: 32px;
+    margin-top: 10px;
+}
+
 .header-container{
     margin-top: 10px;
     height: 50px;
@@ -10,7 +15,8 @@
     margin-right: auto;
     margin-left: 10px;
 }
-.icon{
+
+.acct-icon{
     margin-left: auto;
     margin-right: 40px;
 }
@@ -25,6 +31,7 @@
 
 .search-icon{
     position: absolute;
+    font-size: 30px;
     top: 20%;
     left: 5px;
 }
@@ -50,20 +57,24 @@
 }
 .list-icon{
     margin-right: auto;
-    margin-left: 30px;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 30px;
 }
 
 .nav-bar-group{
     display: flex;
     font-size: small;
     justify-content: center;
+    /* align-content: center; */
     margin-right: auto;
+    position: fixed;
 }
 
 .nav-link {
     border-radius: 20px;
     margin: 8px;
-    padding: 5px;
+    padding: 5px 10px;
     list-style: none;
     text-decoration: none;
     background-color: #F8F5F5;

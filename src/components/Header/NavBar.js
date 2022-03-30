@@ -1,13 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ListIcon from '@material-ui/icons/List'
 import './header.css'
 
 function NavBar() {
   return (
     <div className='nav-container'>
         <div className='list-icon'>
-            <ListIcon />
+        <i className="material-icons list-icon icon">list_icon</i>
         </div>
         <nav className='nav-bar-group'>
                 <Link to= '/food' className="nav-link">FOOD</Link>
