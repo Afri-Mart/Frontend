@@ -52,23 +52,23 @@
     background-color: #FF7A00;
     height: 50px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
+    position: relative;
 }
 .list-icon{
     margin-right: auto;
-    margin-left: 5px;
+    margin-left: 10px;
     margin-top: 5px;
     font-size: 30px;
 }
 
 .nav-bar-group{
-    display: flex;
+    position: absolute;
+    display: inline-flex;
     font-size: small;
     justify-content: center;
-    /* align-content: center; */
-    margin-right: auto;
-    position: fixed;
+    align-items: center;
 }
 
 .nav-link {

@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #FF7A00;
 }
 .wrapper > h4 {
   margin-left: 220px;
@@ -17,6 +18,7 @@
     margin: 20px;
     margin-left: 230px;
     animation: spin 1s linear infinite; 
+    
 }
 
 @keyframes spin {
