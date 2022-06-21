@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
-import Header from '../../Header/header'
+import Header from '../../Header/Header.js'
 import NavBar from '../../Header/NavBar'
 import Products from '../../Products/products'
 import Footer from '../../Footer/Footer'
