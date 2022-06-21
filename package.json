@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "main": "index.js",
-  "homepage": "https://github.com/Afri-Mart/Frontend",
+  "homepage": "https://github.com/KosyAbone/afr-mart-Frontend/tree/main",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
